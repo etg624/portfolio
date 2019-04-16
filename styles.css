@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+html,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Source Code Pro", monospace;
+  /* height: 100%; */
+  color: #e9e0e0;
+}
+
+body {
+  background-image: url("./assets/erastus-mccart-154027-unsplash.jpg");
+  height: 100%;
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-header {
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  display: flex;
+  top: 15px;
+  justify-content: flex-start;
+  width: 100vw;
+}
+.intro {
+  height: 100vh;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  flex-wrap: wrap;
+}
+
+.nav-list > li {
+  width: calc(100% / 4);
+  text-align: center;
+  font-size: 12px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 5px;
+  color: #e9e0e0;
+}
+.link:visited {
+  color: #e9e0e0;
+}
+
+.link:hover {
+  color: #c16e70;
+  cursor: pointer;
+}
+.center-container {
+  position: relative;
+  height: 100px;
+}
+
+.center {
+  z-index: 2;
+  color: #e9e0e0;
+  position: relative;
+  left: 30%;
+  transform: translate(-50%, 150%);
+}
+
+.hello {
+  font-size: 20px;
+  width: 45%;
+  line-height: 140%;
+}
+
+.bold {
+  font-weight: bold;
+  color: #c16e70;
+}
+
+#projects {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 0 0 30px 10px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  opacity: 0.7;
+  filter: contrast(1);
+}
+
+.project-link:hover {
+  color: #e9e0e0;
+  opacity: 0.7;
+}
+
+.project-card-image {
+  width: 310px;
+}
+
+.project-card-header {
+  width: 310px;
+  font-size: 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #c16e70;
+  padding: 10px;
+}
+
+.project-card-footer {
+  width: 310px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  background-color: #c16e70;
+}
+
+.stack {
+  align-self: center;
+  position: absolute;
+}
+
+.stack-list {
+  color: white;
+  list-style-type: disc;
+  list-style-type: decimal;
+  line-height: 200%;
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+}
+
+.resume {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
