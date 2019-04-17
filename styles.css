@@ -252,7 +252,39 @@ h2 {
 }
 
 .project-card-image {
+  transition: 0.5s ease;
+  backface-visibility: hidden;
   width: 310px;
+  display: block;
+}
+
+.container {
+  position: relative;
+  width: 310px;
+}
+
+.hidden-link {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .project-card-image {
+  opacity: 0.03;
+}
+
+.container:hover .hidden-link {
+  opacity: 1;
+}
+
+.hidden-text {
+  color: white;
+  font-size: 16px;
 }
 
 .project-card-header {
@@ -300,6 +332,7 @@ h2 {
   border-radius: 5px;
   margin: 30px;
 }
+
 .resume:hover {
   opacity: 0.4;
 }
@@ -353,6 +386,12 @@ h2 {
   .me {
     width: 30%;
     height: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .me {
+    width: 15%;
   }
 }
 
