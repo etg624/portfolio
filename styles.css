@@ -379,6 +379,10 @@ h2 {
 .contact-link:hover {
   transform: rotate(15deg);
 }
+.top-link {
+  display: block;
+  margin: 20px 0 20px 0;
+}
 
 #about {
   margin-top: 6rem;
