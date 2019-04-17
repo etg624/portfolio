@@ -180,7 +180,7 @@ body {
 .nav-list > li {
   width: calc(100% / 4);
   text-align: center;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .link {
@@ -210,7 +210,7 @@ body {
 }
 
 .hello {
-  font-size: 20px;
+  font-size: 1.2rem;
   width: 45%;
   line-height: 140%;
 }
@@ -230,7 +230,7 @@ body {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 1.4rem;
   margin: 0 0 30px 10px;
 }
 
@@ -285,7 +285,7 @@ h2 {
 
 .hidden-text {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .project-card-header {
@@ -408,6 +408,9 @@ h2 {
     align-self: flex-end;
     right: 10px;
   }
+  .stack {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 780px) {
@@ -433,7 +436,7 @@ h2 {
     width: 100%;
   }
   .project-card-header {
-    font-size: 13px;
+    font-size: 0.9rem;
     width: 40%;
   }
   .project-card-footer {
@@ -443,7 +446,7 @@ h2 {
     transform: translate(-50%, 40%);
   }
   .hello {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
 
