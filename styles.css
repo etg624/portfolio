@@ -148,6 +148,7 @@ main {
 body {
   background-image: url("./assets/background.jpg");
   height: 100%;
+  width: 100%;
   background-position: 0 30%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -309,6 +310,7 @@ h2 {
 .stack {
   align-self: center;
   position: absolute;
+  margin-right: 150px;
 }
 
 .stack-list {
