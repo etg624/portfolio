@@ -418,8 +418,11 @@ h2 {
   .project-card {
     margin: 10px;
   }
-  .project-card-image {
+  .container {
     width: 40%;
+  }
+  .project-card-image {
+    width: 100%;
   }
   .project-card-header {
     font-size: 13px;
