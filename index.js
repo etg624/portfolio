@@ -1,4 +1,8 @@
-console.log("hello");
+console.log(
+  "Hello, nice to meet you! if you haven't already checkout my github, or linkedin!"
+);
+console.log("https://github.com/etg624");
+console.log("https://www.linkedin.com/in/evan-guirino");
 function anchorLinkHandler(e) {
   const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
 
