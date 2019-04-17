@@ -156,14 +156,12 @@ body {
 
 .main-header {
   position: relative;
+  padding: 10px;
 }
 
 .nav {
-  position: absolute;
-  z-index: 2;
-  top: 10px;
+  padding-top: 15px;
   display: flex;
-  top: 15px;
   justify-content: flex-start;
   width: 100vw;
 }
@@ -308,16 +306,16 @@ h2 {
 
 #about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .me {
-  width: 10%;
+  width: 15%;
   display: block;
   justify-self: center;
-  height: 10%;
+  height: 15%;
   border-radius: 5px;
   opacity: 0.8;
   border: 2px solid #c16e70;
@@ -345,4 +343,57 @@ h2 {
 
 .contact-link:hover {
   transform: rotate(15deg);
+}
+
+@media (max-width: 860px) {
+  .stack {
+    align-self: flex-end;
+    right: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  .nav-list {
+    width: 100%;
+  }
+  .center {
+    transform: translate(-50%, 80%);
+  }
+}
+
+@media (max-width: 599px) {
+  .stack-list {
+    line-height: 110%;
+  }
+  .project-card {
+    margin: 10px;
+  }
+  .project-card-image {
+    width: 40%;
+  }
+  .project-card-header {
+    font-size: 13px;
+    width: 40%;
+  }
+  .project-card-footer {
+    width: 40%;
+  }
+  .center {
+    transform: translate(-50%, 40%);
+  }
+  .hello {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-position: center;
+  }
+  .me {
+    width: 30%;
+  }
+  .about-me {
+    width: 80%;
+  }
 }
