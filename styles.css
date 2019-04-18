@@ -457,6 +457,8 @@ h2 {
 @media (max-width: 574px) {
   body {
     background-image: url("./assets/738.jpg");
+    width: 50%;
+    height: 50%;
   }
 }
 
