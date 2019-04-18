@@ -29,3 +29,14 @@ function anchorLinkHandler(e) {
 const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
 linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+
+// const bg = document.querySelector(".bg");
+// const windowWidth = window.innerWidth / 5;
+// const windowHeight = window.innerHeight / 5;
+
+// bg.addEventListener("mousemove", e => {
+//   const mouseX = e.clientX / windowWidth;
+//   const mouseY = e.clientY / windowHeight;
+
+//   bg.style.backgroundPosition = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+// });
