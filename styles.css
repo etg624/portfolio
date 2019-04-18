@@ -140,6 +140,10 @@ html {
   color: #e9e0e0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -459,5 +463,17 @@ h2 {
   }
   .about-me {
     width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    background-image: url("./assets/mobile.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
