@@ -456,7 +456,14 @@ h2 {
 
 @media (max-width: 500px) {
   body {
+    background-image: url("./assets/mobile.jpg");
+
+    height: 100%;
+    width: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   .me {
     width: 30%;
@@ -467,14 +474,4 @@ h2 {
 }
 
 @media (max-width: 450px) {
-  body {
-    background-image: url("./assets/mobile.jpg");
-
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
 }
