@@ -177,7 +177,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 35%;
+  width: 45%;
   flex-wrap: wrap;
 }
 
