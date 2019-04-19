@@ -530,6 +530,7 @@ h2 {
     transform: translate(-50%, 40%);
   }
   .hello {
+    width: 45%;
     font-size: 1rem;
   }
 }
