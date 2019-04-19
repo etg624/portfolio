@@ -452,6 +452,9 @@ h2 {
 }
 
 @media (min-width: 1000px) {
+  .resume {
+    width: 400px;
+  }
   .me {
     width: 15%;
   }
