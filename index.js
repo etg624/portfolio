@@ -1,5 +1,6 @@
 console.log(
-  "Hello, nice to meet you! if you haven't already checkout my github, or linkedin!"
+  "%c Hello, nice to meet you! If you haven't already, checkout my github, or linkedin!",
+  "background: #222; color: #bada55"
 );
 console.log("https://github.com/etg624");
 console.log("https://www.linkedin.com/in/evan-guirino");
@@ -29,14 +30,3 @@ function anchorLinkHandler(e) {
 const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
 linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
-
-// const bg = document.querySelector(".bg");
-// const windowWidth = window.innerWidth / 5;
-// const windowHeight = window.innerHeight / 5;
-
-// bg.addEventListener("mousemove", e => {
-//   const mouseX = e.clientX / windowWidth;
-//   const mouseY = e.clientY / windowHeight;
-
-//   bg.style.backgroundPosition = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
-// });
