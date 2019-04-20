@@ -414,7 +414,7 @@ h2 {
 }
 
 .about-me {
-  width: 50%;
+  width: 90%;
   line-height: 150%;
 }
 #contact {
@@ -452,6 +452,10 @@ h2 {
 }
 
 @media (min-width: 1000px) {
+  .about-me {
+    width: 50%;
+    line-height: 150%;
+  }
   .resume {
     width: 400px;
   }
@@ -516,19 +520,6 @@ h2 {
   .project-card {
     margin: 15px auto;
   }
-  /* .container {
-    width: 40%;
-  }
-  .project-card-image {
-    width: 100%;
-  }
-  .project-card-header {
-    font-size: 0.9rem;
-    width: 40%;
-  }
-  .project-card-footer {
-    width: 40%;
-  } */
   .center {
     transform: translate(-50%, 40%);
   }
