@@ -38,7 +38,7 @@ const intersections = new IntersectionObserver(entries => {
 
   const interRatio = Math.ceil(entry.intersectionRatio);
 
-  if (entry.intersectionRatio > 0) {
+  if (interRatio === 1) {
     entry.target.classList.remove('add-typewriter');
     entry.target.classList.add('typewriter');
   } else {
