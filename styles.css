@@ -145,6 +145,7 @@ html {
 main {
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 body {
@@ -155,17 +156,28 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
 }
 
 .main-header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  transition: top 0.3s;
   padding: 10px;
+  box-sizing: content-box;
+  z-index: 1;
+  height: 75px;
+  background-color: #194e95;
+  transition: top 0.3s;
+  width: 100vw;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .nav {
-  padding-top: 15px;
   display: flex;
   justify-content: flex-start;
+  height: 100%;
+  align-items: center;
   width: 100vw;
 }
 .intro {
@@ -204,7 +216,6 @@ body {
 }
 
 .center {
-  z-index: 2;
   color: #e9e0e0;
   position: relative;
   left: 30%;
@@ -247,8 +258,7 @@ h2 {
   display: flex;
   margin: 30px auto;
   flex-direction: column;
-  opacity: 0.7;
-  filter: contrast(1);
+  opacity: 0.9;
 }
 
 .project-link:hover {
@@ -279,7 +289,7 @@ h2 {
   color: white;
   border-radius: 6px;
   padding: 8px 5px;
-  font-size: 0.8rem;
+  font-size: 1em;
   margin: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -363,13 +373,6 @@ h2 {
   margin-right: 150px;
 }
 
-.stack-list {
-  color: white;
-  list-style-type: disc;
-  list-style-type: decimal;
-  line-height: 200%;
-}
-
 #resume {
   margin: 10px;
   display: flex;
@@ -388,13 +391,14 @@ h2 {
   width: 60%;
   height: 60%;
   border-radius: 5px;
-
-  transition: 0.2s ease-in;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .resume:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.2s ease-in;
-  opacity: 0.5;
+  transform: scale(1.1);
 }
 
 #about {
@@ -506,18 +510,18 @@ h2 {
     margin: -30px auto;
   }
   .container {
-    width: 400px;
+    width: 100%;
   }
   .project-card-footer {
-    width: 400px;
+    width: 100%;
   }
 
   .project-card-header {
-    width: 400px;
+    width: 600px;
   }
 
   .project-card-image {
-    width: 400px;
+    width: 600px;
   }
 
   .app-description {

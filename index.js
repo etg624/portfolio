@@ -37,14 +37,29 @@ const intersections = new IntersectionObserver(entries => {
   const entry = entries[0];
 
   const interRatio = Math.ceil(entry.intersectionRatio);
-
   if (interRatio === 1) {
-    entry.target.classList.remove('add-typewriter');
+    entry.target.style.opacity = 1;
+    entry.target.hidden = false;
     entry.target.classList.add('typewriter');
+    entry.target.classList.remove('add-typewriter');
   } else {
-    return;
+    entry.target.style.opacity = 0;
   }
 });
 typeWriterSections.forEach(section => {
   intersections.observe(section);
 });
+
+let prevScrollPosition = window.pageYOffset;
+
+window.onscroll = () => {
+  let currentPosition = window.pageYOffset;
+  const header = document.querySelector('.main-header');
+
+  if (prevScrollPosition > currentPosition) {
+    header.style.top = '0';
+  } else {
+    header.style.top = '-100px';
+  }
+  prevScrollPosition = currentPosition;
+};
