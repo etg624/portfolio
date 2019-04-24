@@ -75,5 +75,5 @@ function useScrollableHeader() {
 if (width > 701) {
   useScrollableHeader();
 } else {
-  document.querySelector('.main-header').style.position = 'sticky';
+  document.querySelector('.main-header').style.position = 'fixed';
 }

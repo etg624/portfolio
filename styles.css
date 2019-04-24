@@ -233,6 +233,10 @@ body {
   color: #c16e70;
 }
 
+.drop {
+  padding-top: 120px;
+}
+
 #projects {
   width: 100%;
   align-items: center;
