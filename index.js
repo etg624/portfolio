@@ -50,16 +50,30 @@ typeWriterSections.forEach(section => {
   intersections.observe(section);
 });
 
-let prevScrollPosition = window.pageYOffset;
+const width =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
 
-window.onscroll = () => {
-  let currentPosition = window.pageYOffset;
-  const header = document.querySelector('.main-header');
+function useScrollableHeader() {
+  console.log('using');
+  let prevScrollPosition = window.pageYOffset;
 
-  if (prevScrollPosition > currentPosition) {
-    header.style.top = '0';
-  } else {
-    header.style.top = '-100px';
-  }
-  prevScrollPosition = currentPosition;
-};
+  window.onscroll = () => {
+    let currentPosition = window.pageYOffset;
+    const header = document.querySelector('.main-header');
+
+    if (prevScrollPosition > currentPosition) {
+      header.style.top = '0';
+    } else {
+      header.style.top = '-100px';
+    }
+    prevScrollPosition = currentPosition;
+  };
+}
+
+if (width > 701) {
+  useScrollableHeader();
+} else {
+  document.querySelector('.main-header').style.position = 'sticky';
+}
