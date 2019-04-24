@@ -72,8 +72,11 @@ function useScrollableHeader() {
   };
 }
 
+const header = document.querySelector('.main-header');
+
 if (width > 701) {
   useScrollableHeader();
 } else {
-  document.querySelector('.main-header').style.position = 'fixed';
+  header.style.position = 'fixed';
+  header.style.height = '50px';
 }
