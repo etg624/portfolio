@@ -456,11 +456,13 @@ h2 {
 }
 
 .add-typewriter {
+  z-index: 2;
   opacity: 0;
 }
 
 .typewriter h2 {
   overflow: hidden;
+  z-index: 2;
   border-right: 0.1em solid #c16e70;
   white-space: nowrap;
   margin: 0 auto;
