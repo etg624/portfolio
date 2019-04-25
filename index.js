@@ -56,7 +56,6 @@ const width =
   document.body.clientWidth;
 
 function useScrollableHeader() {
-  console.log('using');
   let prevScrollPosition = window.pageYOffset;
 
   window.onscroll = () => {
