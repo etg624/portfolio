@@ -5,10 +5,6 @@ console.log(
 console.log('https://github.com/etg624');
 console.log('https://www.linkedin.com/in/evan-guirino');
 
-window.onload = () => {
-  window.scrollTo(0, 0);
-};
-
 const typeWriterSections = document.querySelectorAll('.add-typewriter');
 const intersections = new IntersectionObserver(entries => {
   const entry = entries[0];
